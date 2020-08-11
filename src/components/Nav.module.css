@@ -1,0 +1,12 @@
+.Nav {
+    display: flex;
+    align-items: center;
+}
+
+.centerAlign {
+    justify-content: center;
+}
+
+.leftAlign {
+    justify-content: flex-start;
+}

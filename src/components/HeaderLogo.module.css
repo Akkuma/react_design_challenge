@@ -1,0 +1,13 @@
+.Logo {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.Name {
+    margin-left: 12px;
+}
+
+.Name > path {
+    fill: var(--text-on-bg-color);
+}

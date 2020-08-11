@@ -1,0 +1,25 @@
+.default {
+    cursor: pointer;
+    padding: 0;
+    outline: 0;
+    border: 0;
+
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: 500;
+    font-size: var(--font-size-medium);
+    line-height: 24px;
+
+    min-width: 116px;
+    height: 48px;
+    border-radius: 8px;
+    background: #0070F3;
+
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+.default:disabled {
+    background: #8F949F;
+}

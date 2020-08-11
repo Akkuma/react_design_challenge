@@ -1,0 +1,95 @@
+:root {
+    --animationTime: .1s;
+    --inputPaddingLeft: 16px;
+    --inputPaddingFilled: 30px 0 11px var(--inputPaddingLeft);
+}
+
+.FormField {
+    position: relative;
+    width: 100%;
+}
+
+.Label {
+    visibility: hidden;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 1rem;
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: normal;
+    font-size: var(--font-size-medium);
+    line-height: 24px;
+    color: #8F949F;
+
+    transition: var(--animationTime) all ease-in-out;
+}
+
+.Input:focus + .Label, .Input:not(:placeholder-shown) + .Label {
+    visibility: visible;
+    top: 18px; /*10px + 1/2 font-size*/
+    font-weight: bold;
+    font-size: var(--font-size-tiny);
+    text-transform: uppercase;
+    letter-spacing: 0.01em;
+    color: #0070F3;
+}
+
+.Input:not(:placeholder-shown):not(:focus) + .Label {
+    color: #636975;
+}
+
+.Input {
+    position: relative;
+    width: 100%;
+    background: var(--field-bg-color);
+    border: 1px solid var(--field-border-color);
+    box-sizing: border-box;
+    border-radius: 8px;
+
+    font-style: normal;
+    font-weight: normal;
+    font-size: var(--font-size-medium);
+    height: 64px;
+    padding: 20px 0 20px 16px;
+
+}
+
+.Input::placeholder {    
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: normal;
+    font-size: var(--font-size-medium);
+    color: #8F949F;
+}
+
+.Input:focus {
+    background: #D8EEFC;    
+    border: 2px solid #0080FF;
+    outline: none;
+    padding: var(--inputPaddingFilled);
+    padding-left: calc(var(--inputPaddingLeft) - 1px);
+}
+
+.Input:not(:placeholder-shown):not(:focus) {
+    padding: var(--inputPaddingFilled);
+    color: var(--text-on-surface-color);
+}
+
+.Input:focus::placeholder {
+    opacity: 0;
+}
+
+.Input:placeholder-shown:not(:focus)::placeholder {
+    opacity: 1;
+    transition: opacity 0s var(--animationTime);
+}
+
+
+
+
+
+/*
+.Input:focus + .Label {
+    left: calc(1rem + 1px);
+}*/

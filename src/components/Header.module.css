@@ -1,0 +1,13 @@
+.Header {
+    padding-top: 40px;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+}
+
+.SiteLink {
+    margin-right: 40px;
+}
+
+.SignIn {
+    margin-left: 50px;
+}

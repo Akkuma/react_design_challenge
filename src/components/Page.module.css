@@ -1,0 +1,40 @@
+.Page {
+    margin-top: 90px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Header {
+    margin-bottom: 40px;
+}
+
+.Logo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 24px;
+}
+
+.Name {
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: bold;
+    font-size: var(--font-size-xxlarge);
+    line-height: 48px;
+    text-align: center;
+
+    color: var(--text-on-bg-color);
+
+    margin: 0;
+    margin-bottom: 32px;
+}
+
+.Description {
+    composes: Name;
+
+    font-weight: normal;
+    font-size: var(--font-size-large);
+    line-height: 36px;
+    margin: 0;
+}

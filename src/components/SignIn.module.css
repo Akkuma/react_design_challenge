@@ -1,0 +1,7 @@
+.text {
+    margin-right: 10px;
+}
+
+.rightTriangle {
+    fill: var(--text-on-bg-color);
+}

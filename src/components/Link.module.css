@@ -1,0 +1,34 @@
+.default {
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: bold;
+    font-size: var(--font-size-small);
+    line-height: 24px;
+    color: var(--text-on-bg-color);
+    text-decoration: none;
+
+    display: inline-block;
+    text-align: center;
+}
+
+.standout {
+    composes: default;
+
+    color: #0070F3;
+}
+
+.nav {
+    composes: default;
+
+    font-weight: 500;
+    font-size: var(--font-size-medium);
+}
+
+.button {
+    composes: nav;
+
+    padding: 4px 20px;
+    background: var(--text-on-surface-color);
+    border-radius: 16px;
+}
+

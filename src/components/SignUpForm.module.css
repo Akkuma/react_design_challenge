@@ -1,0 +1,91 @@
+.SignUpForm {
+    background: var(--surface-color);
+
+    border: 1px solid var(--field-border-color);
+    box-sizing: border-box;
+    border-radius: 14px;
+
+    min-width: 480px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding-bottom: 24px;
+}
+
+.Logo {
+    margin: 32px 0 24px 0;
+    width: 48px;
+    height: 48px;
+
+    background: var(--off-bg-color);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Name {
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: normal;
+    font-size: var(--font-size-xlarge);
+    line-height: 32px;
+    margin: 0;
+    color: var(--text-on-surface-color);
+}
+
+.Description {
+    composes: Name;
+
+    font-size: var(--font-size-medium);
+}
+
+.Fields {
+    box-sizing: border-box;
+    width: 100%;
+    margin-top: 2rem;
+    padding: 0 2rem;
+}
+
+.Password {
+    margin-top: 1rem;
+    margin-bottom: 8px;
+}
+
+.Bar {
+    width: 100%;
+    margin: 1rem 0;
+    border: 0;
+    border-top: 1px solid var(--field-border-color);
+}
+
+.Agree {
+    margin-bottom: 40px;
+}
+
+.Submit {
+    display: flex;
+    justify-content: flex-end;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0 2rem;
+}
+
+.SignIn {
+    margin: 8px 0 140px;
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: normal;
+    font-size: var(--font-size-small);
+    line-height: 26px;
+
+    color: var(--text-on-bg-color);
+}
+
+.Split {
+    display: flex;
+    justify-content: center;
+    
+}

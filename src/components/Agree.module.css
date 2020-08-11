@@ -1,0 +1,22 @@
+.Agree {
+    display: flex;
+    align-items: center;
+}
+
+.Input {
+    margin-right: 8px;
+    height: 18px;
+    width: 18px;
+}
+
+.Input:checked {
+}
+
+.Label {
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: normal;
+    font-size: var(--font-size-small);
+    line-height: 24px;
+    color: var(--text-on-surface-color);
+}
